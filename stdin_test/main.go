@@ -11,7 +11,7 @@ import (
 func main() {
     reader := bufio.NewReader(os.Stdin)
 
-    for true {
+    for {
         input, err := reader.ReadString('\n')
         if err != nil {
             if err == io.EOF {
